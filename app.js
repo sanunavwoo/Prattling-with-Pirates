@@ -17,16 +17,15 @@ function clickEvent(){
     //alert('Clicked');
     try{
         var txt_value= input_text.value;
-    //var reverse_text="";
-    // for(var letter= txt_value.length-1 ; letter>=0; letter--)
-    // {
-    //     reverse_text+= txt_value[letter];
-    // }
-    // console.log(txt_value);
-    // console.log("Reversed: "+reverse_text);
-
-    //Outputting in the output txt area
+        if(txt_value)
+        {
+            alert("Please enter a valid input");
+        }
+        else{
+            //Outputting in the output txt area
         output_txt.innerHTML= pirateTranslate(txt_value);
+        }
+    
     }
     catch(e){
         alert("Error fetching data from API: "+e);
