@@ -17,7 +17,7 @@ function clickEvent(){
     //alert('Clicked');
     try{
         var txt_value= input_text.value;
-        if(txt_value)
+        if(txt_value=="")
         {
             alert("Please enter a valid input");
         }
